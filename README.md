@@ -12,7 +12,11 @@ This project was developed as Assignment 2 for the Artificial Intelligence cours
 ```
 
 ## Run train.py
-In model package will appear 2 files, model.h5 and weight.h5
+In model package will appear 2 files
+```
+model/model.h5
+model/weights.h5
+```
 
 ## Open predict.py
 You can test the function there. Just change the example path.
