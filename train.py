@@ -7,7 +7,6 @@ from tensorflow.python.keras.models import Sequential
 
 # Rutas
 path = 'Vegetable Images/'
-test_dir = path + 'test'
 train_dir = path + 'train'
 vali_dir = path + 'validation'
 
@@ -21,14 +20,12 @@ validation_steps = 20
 filter_size = (3, 2)
 filter_size2 = (2, 2)
 pool_size = (2, 2)
-num_classes = 15
+num_classes = 8
 lr = 0.0005
 
 # Pre procesamiento de imágenes
 image_data = ImageDataGenerator(rescale=1./255)
 
-image_test_data = image_data.flow_from_directory(
-    test_dir, target_size=(img_height, img_width), class_mode='categorical', batch_size=batch_size)
 image_train_data = image_data.flow_from_directory(
     train_dir, target_size=(img_height, img_width), class_mode='categorical', batch_size=batch_size, subset='training')
 image_vali_data = image_data.flow_from_directory(

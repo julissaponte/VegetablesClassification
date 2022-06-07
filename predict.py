@@ -10,8 +10,8 @@ weights_dir = 'model/weights.h5'
 # Parametros
 img_height = 100
 img_width = 100
-class_names = ['Bean', 'Bitter gourd', 'Bottle gourd', 'Brinjal', 'Broccoli', 'Cabbage', 'Capsicum', 'Carrot',
-               'Cauliflower', 'Cucumber', 'Papaya', 'Potato', 'Pumpkin', 'Radish', 'Tomato']
+class_names = ['Bottle gourd', 'Brinjal', 'Broccoli', 'Cabbage', 'Capsicum', 'Carrot',
+               'Cauliflower', 'Cucumber']
 
 
 model = load_model(model_dir)
@@ -42,20 +42,6 @@ def predict(file):
         print(class_names[6])
     elif response == 7:
         print(class_names[7])
-    elif response == 8:
-        print(class_names[8])
-    elif response == 9:
-        print(class_names[9])
-    elif response == 10:
-        print(class_names[10])
-    elif response == 11:
-        print(class_names[11])
-    elif response == 12:
-        print(class_names[12])
-    elif response == 13:
-        print(class_names[13])
-    elif response == 14:
-        print(class_names[14])
 
     return response
 
